@@ -1,5 +1,8 @@
 # IMH-user-application
 
+## Authors
+Valentin Moreau
+
 ## Installation
 - Clone repository
 - Navigate into foler
