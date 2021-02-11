@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Resource Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="resourceDetail$ | async as resource">
+    <ion-card-header>
+      <ion-card-title>{{resource.name}} {{resource.year}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <p>{{resource.color}}</p>
+      </ion-item>
+        <p>{{resource.pantone_value}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

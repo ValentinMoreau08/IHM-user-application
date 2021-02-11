@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create a user</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="logForm()">
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input type="text" [(ngModel)]="user.name" name="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Job</ion-label>
+      <ion-textarea [(ngModel)]="user.job" name="job"></ion-textarea>
+    </ion-item>
+    <button ion-button type="submit" block>Create</button>
+  </form>
+  </ion-content>

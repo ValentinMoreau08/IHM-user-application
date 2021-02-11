@@ -1,0 +1,15 @@
+<ion-list *ngFor="let resource of resourceList">
+
+  <ion-item>
+    <ion-card (click)="selectResource(resource.id)">
+      <ion-card-header>
+        <ion-card-title>{{resource.name}} {{resource.year}}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        {{resource.pantone_value}}
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+
+</ion-list>

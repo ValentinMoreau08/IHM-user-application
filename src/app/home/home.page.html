@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-buttons>
+    <button ion-button (click)="goToCreateUser()">Create a user</button>
+  </ion-buttons>
+  <app-user-list [userList]="userList$ | async" (selectedUser)="goToUserDetail($event)"></app-user-list>
+  <app-resource-list [resourceList]="resourceList$ | async" (selectedResource)="goToResourceDetail($event)"></app-resource-list>
+</ion-content>
